@@ -13,6 +13,13 @@ The protocol for the agent is defined here
 https://tools.ietf.org/id/draft-miller-ssh-agent-04.html
 
 
+To build 
+
+```
+go get github.com/dandare100/agentstub
+go build github.com/dandare100/agentstub
+```
+
 This project illustrates private key operations. Not the fact that anybody who has root on the target box can login to any other machine you have access to using your key/s whilst you are logged in. That is covered in the links above.
 
 It uses the agent socket that is setup when using ssh agent forwarding and as such is aimed at showing what can happen when you ssh into a machine (using ssh agent forwarding) and that machine has been compromised, or someone malicious has root on that machine
